@@ -186,7 +186,7 @@ export default function CreateListing() {
             onChange={handleChange}
             value={formData.address}
           />
-          <div className="flex gap-6">
+          <div className="flex gap-6 flex-wrap">
             <div className="flex gap-2">
               <input
                 type="checkbox"
