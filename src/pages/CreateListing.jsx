@@ -5,9 +5,9 @@ import {
   ref,
   uploadBytesResumable,
 } from "firebase/storage";
-import { app } from "../firebase";
 import {useSelector} from 'react-redux'
 import {useNavigate} from 'react-router-dom'
+import { app } from "../firebase/firebaseConfig";
 
 export default function CreateListing() {
   const {currentUser} = useSelector(state => state.user)

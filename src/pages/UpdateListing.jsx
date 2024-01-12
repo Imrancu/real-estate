@@ -5,9 +5,9 @@ import {
   ref,
   uploadBytesResumable,
 } from "firebase/storage";
-import { app } from "../firebase";
 import {useSelector} from 'react-redux'
 import {useNavigate, useParams} from 'react-router-dom'
+import { app } from "../firebase/firebaseConfig";
 
 export default function UpdateListing() {
     const params = useParams();

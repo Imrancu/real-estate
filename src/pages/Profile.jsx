@@ -6,7 +6,6 @@ import {
   ref,
   uploadBytesResumable,
 } from "firebase/storage";
-import { app } from "../firebase";
 import {
   deleteUserFailure,
   deleteUserStart,
@@ -19,6 +18,7 @@ import {
   updateUserSuccess,
 } from "../redux/user/userSlice";
 import { Link } from "react-router-dom";
+import { app } from "../firebase/firebaseConfig";
 
 export default function Profile() {
   const fileRef = useRef(null);
