@@ -7,7 +7,7 @@ import {
 } from "firebase/storage";
 import {useSelector} from 'react-redux'
 import {useNavigate, useParams} from 'react-router-dom'
-import { app } from "../firebase/firebaseConfig";
+import { app } from "../../firebaseConfig";
 
 export default function UpdateListing() {
     const params = useParams();

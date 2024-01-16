@@ -7,7 +7,7 @@ import {
 } from "firebase/storage";
 import {useSelector} from 'react-redux'
 import {useNavigate} from 'react-router-dom'
-import { app } from "../firebase/firebaseConfig";
+import { app } from "../../firebaseConfig.js";
 
 export default function CreateListing() {
   const {currentUser} = useSelector(state => state.user)

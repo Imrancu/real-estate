@@ -18,7 +18,7 @@ import {
   updateUserSuccess,
 } from "../redux/user/userSlice";
 import { Link } from "react-router-dom";
-import { app } from "../firebase/firebaseConfig";
+import { app } from "../../firebaseConfig";
 
 export default function Profile() {
   const fileRef = useRef(null);
