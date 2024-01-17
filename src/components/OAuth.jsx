@@ -13,7 +13,7 @@ export default function OAuth() {
   useEffect(() => {
     getRedirectResult(auth).then( async(response) => {
         if (!response) return
-        const res = await fetch("/api/auth/google", {
+        const res = await fetch("https://api-self-zeta.vercel.app/api/auth/google", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

@@ -18,7 +18,7 @@ export default function SignUp() {
     e.preventDefault();
     try {
       setLoading(true);
-      const res = await fetch('/api/auth/signup', 
+      const res = await fetch('https://api-self-zeta.vercel.app/api/auth/signup', 
       {
         method: 'POST',
         headers: {
